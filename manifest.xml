@@ -16,7 +16,12 @@
 
   <IconUrl DefaultValue="https://green-flower-0aca7f410.7.azurestaticapps.net/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://green-flower-0aca7f410.7.azurestaticapps.net/assets/icon-80.png"/>
+
   <SupportUrl DefaultValue="https://green-flower-0aca7f410.7.azurestaticapps.net"/>
+
+  <AppDomains>
+    <AppDomain>https://green-flower-0aca7f410.7.azurestaticapps.net</AppDomain>
+  </AppDomains>
 
   <Hosts>
     <Host Name="Mailbox"/>
@@ -58,7 +63,6 @@
     <Hosts>
       <Host xsi:type="MailHost">
         <DesktopFormFactor>
-
           <ExtensionPoint xsi:type="MessageReadCommandSurface">
             <OfficeTab id="TabDefault">
               <Group id="SaveContactsGroup">
@@ -86,7 +90,6 @@
               </Group>
             </OfficeTab>
           </ExtensionPoint>
-
         </DesktopFormFactor>
       </Host>
     </Hosts>
@@ -113,4 +116,5 @@
     </Resources>
 
   </VersionOverrides>
+
 </OfficeApp>
