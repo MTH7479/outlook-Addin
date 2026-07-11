@@ -1,5 +1,7 @@
 Office.onReady(function () {
-  document.getElementById("sendTriggerButton").addEventListener("click", sendTriggerToPowerAutomate);
+  document
+    .getElementById("sendTriggerButton")
+    .addEventListener("click", sendTriggerToPowerAutomate);
 });
 
 async function sendTriggerToPowerAutomate() {
@@ -56,6 +58,7 @@ async function sendTriggerToPowerAutomate() {
       "נשלח ל-Power Automate.\n" +
       "Project: " + projectNumber + "\n" +
       "Subject: " + (payload.mail.subject || "");
+
   } catch (error) {
     console.error(error);
     status.textContent = "שגיאה: " + error.message;
@@ -70,10 +73,6 @@ function getRestItemIdSafe(itemIdEws) {
   }
 
   try {
-    if (Office.context.mailbox.diagnostics.hostName === "OutlookIOS") {
-      return itemIdEws;
-    }
-
     return Office.context.mailbox.convertToRestId(
       itemIdEws,
       Office.MailboxEnums.RestVersion.v2_0
@@ -84,17 +83,15 @@ function getRestItemIdSafe(itemIdEws) {
 }
 
 async function postToPowerAutomate(payload) {
-  https://defaultac53278e996549ee9675e63f500525.2f.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflo = "PASTE_POWER_AUTOMATE_HTTP_TRIGGER_URL_HERE";
 
-  /*
-    נשלח כ-text/plain עם no-cors כדי להימנע מחסימת CORS בדפדפן.
-    לכן ב-Power Automate אנחנו עושים:
-    json(triggerBody())
-  */
+  const flowUrl = "PASTE_POWER_AUTOMATE_HTTP_TRIGGER_URL_HERE";
 
   await fetch(flowUrl, {
     method: "POST",
     mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json"
+    },
     body: JSON.stringify(payload)
   });
 }

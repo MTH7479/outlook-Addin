@@ -14,9 +14,9 @@
   <DisplayName DefaultValue="Save Contacts"/>
   <Description DefaultValue="Send selected email and project number to Power Automate"/>
 
-  <IconUrl DefaultValue="https://apps.shubich.com/outlook-save-contacts/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://apps.shubich.com/outlook-save-contacts/assets/icon-80.png"/>
-  <SupportUrl DefaultValue="https://apps.shubich.com"/>
+  <IconUrl DefaultValue="https://green-flower-0aca7f410.7.azurestaticapps.net/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://green-flower-0aca7f410.7.azurestaticapps.net/assets/icon-80.png"/>
+  <SupportUrl DefaultValue="https://green-flower-0aca7f410.7.azurestaticapps.net"/>
 
   <Hosts>
     <Host Name="Mailbox"/>
@@ -31,7 +31,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://apps.shubich.com/outlook-save-contacts/taskpane.html"/>
+        <SourceLocation DefaultValue="https://green-flower-0aca7f410.7.azurestaticapps.net/taskpane.html"/>
         <RequestedHeight>450</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -93,13 +93,13 @@
 
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon16" DefaultValue="https://apps.shubich.com/outlook-save-contacts/assets/icon-16.png"/>
-        <bt:Image id="Icon32" DefaultValue="https://apps.shubich.com/outlook-save-contacts/assets/icon-32.png"/>
-        <bt:Image id="Icon80" DefaultValue="https://apps.shubich.com/outlook-save-contacts/assets/icon-80.png"/>
+        <bt:Image id="Icon16" DefaultValue="https://green-flower-0aca7f410.7.azurestaticapps.net/assets/icon-16.png"/>
+        <bt:Image id="Icon32" DefaultValue="https://green-flower-0aca7f410.7.azurestaticapps.net/assets/icon-32.png"/>
+        <bt:Image id="Icon80" DefaultValue="https://green-flower-0aca7f410.7.azurestaticapps.net/assets/icon-80.png"/>
       </bt:Images>
 
       <bt:Urls>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://apps.shubich.com/outlook-save-contacts/taskpane.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://green-flower-0aca7f410.7.azurestaticapps.net/taskpane.html"/>
       </bt:Urls>
 
       <bt:ShortStrings>
