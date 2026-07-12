@@ -154,7 +154,7 @@ function getRestItemIdSafe(itemIdEws) {
 }
 
 async function postToPowerAutomate(payload) {
-  const flowUrl = "https://defaultac53278e996549ee9675e63f500525.2f.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/12/workflows/3b502b33e84c4123a19bc4770cbd31c0/triggers/manual/paths/invoke?api-version=1";
+  const flowUrl = "https://defaultac53278e996549ee9675e63f500525.2f.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/12/workflows/3b502b33e84c4123a19bc4770cbd31c0/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=GkoDuP9UVxSFBW9XvaQpCoszNVA16c3bQoOi3cb1ehE";
 
   const response = await fetch(flowUrl, {
     method: "POST",
